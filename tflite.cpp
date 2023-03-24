@@ -22,7 +22,7 @@ int main()
 
 	float maxV = -1;
 	int maxIdx = -1;
-	for (int i = 0; i < 10; ++i)
+	for (int i = 0; i < 10; i++)
 	{
 		if (logits[i] > maxV)
 		{
@@ -31,7 +31,7 @@ int main()
 		}
 		printf("%d->%f\n", i, logits[i]);
 	}
-	cout << "Àà±ð£º" << maxIdx << "£¬¸ÅÂÊ£º" << maxV << endl;
+	cout << "Ã€Ã Â±Ã°Â£Âº" << maxIdx << "Â£Â¬Â¸Ã…Ã‚ÃŠÂ£Âº" << maxV << endl;
 	TfLiteInterpreterDelete(interpreter);
 	TfLiteInterpreterOptionsDelete(option);
 	TfLiteModelDelete(model);
